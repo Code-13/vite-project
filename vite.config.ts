@@ -29,6 +29,11 @@ export default ({ command }: ConfigEnv): UserConfigExport => {
     ],
     alias: {
       '@': path.resolve(__dirname, 'src')
+    },
+    css: {
+      modules: {
+        localsConvention: 'camelCase'
+      }
     }
   }
 }
