@@ -11,7 +11,10 @@
   <h1>{{ msg }}</h1>
 
   <p>
-    <a href="https://vitejs.dev/guide/features.html" target="_blank">Vite Documentation</a> |
+    <a href="https://vitejs.dev/guide/features.html" target="_blank"
+      >Vite Documentation</a
+    >
+    |
     <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Documentation</a>
   </p>
 
@@ -19,7 +22,9 @@
     Recommended IDE setup:
     <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
     +
-    <a href="https://marketplace.visualstudio.com/items?itemName=octref.vetur" target="_blank"
+    <a
+      href="https://marketplace.visualstudio.com/items?itemName=octref.vetur"
+      target="_blank"
       >Vetur</a
     >
     +
@@ -31,16 +36,19 @@
   </p>
   <p>
     If using &lt;script setup&gt;: use
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a> instead (and disable
-    Vetur)
+    <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
+    instead (and disable Vetur)
   </p>
   <p>
-    <b style="color: red">Make sure to use workspace version of TypeScript!!!</b>
-    <br />This leverages the <code>@vuex/typescript-plugin-vue</code> to provide types for `*.vue`
-    imports. <br />1. Open <code>src/main.ts</code> in VSCode <br />2. Open VSCode command input
-    <br />3. Search and run "Select TypeScript version" -> "Use workspace version"
+    <b style="color: red"
+      >Make sure to use workspace version of TypeScript!!!</b
+    >
+    <br />This leverages the <code>@vuex/typescript-plugin-vue</code> to provide
+    types for `*.vue` imports. <br />1. Open <code>src/main.ts</code> in VSCode
+    <br />2. Open VSCode command input <br />3. Search and run "Select
+    TypeScript version" -> "Use workspace version"
   </p>
-  <button @click="count++"> count is: {{ count }} </button>
+  <button @click="count++">count is: {{ count }}</button>
   <p>
     Edit
     <code>components/HelloWorld.vue</code> to test hot module replacement.

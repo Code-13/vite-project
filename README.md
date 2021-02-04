@@ -1,4 +1,4 @@
-# Vite Project Demo
+# Vite Project
 
 [vite 官方文档地址](vitejs.dev)
 
@@ -72,18 +72,9 @@ export default defineConfig({
 yarn add -D eslint eslint-plugin-vue prettier eslint-config-prettier eslint-plugin-prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin
 ```
 
-### .eslintre.js
+### .eslintrc.js
 
 ```js
-/*
- * @Author       : code13
- * @Date         : 2021-02-04 15:22:56
- * @LastEditTime : 2021-02-04 15:30:32
- * @LastEditors  : code13
- * @Description  : eslint
- * @FilePath     : \.eslintrc.js
- * @https://github.com/Code-13
- */
 module.exports = {
   parser: 'vue-eslint-parser',
   parserOptions: {
@@ -271,7 +262,7 @@ http://localhost:3000/api/get 检查链接查看即可
 
 ## 样式及图片模块
 
-vite 支持模块样式，和 cra 一样，以 \*.module.scss 命名即可。
+vite 支持模块样式，以 \*.module.scss 或者 \*.module.less 命名即可。
 
 ```tsx
 import { defineComponent } from 'vue'
