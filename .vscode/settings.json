@@ -1,0 +1,27 @@
+{
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    ".idea": true
+    // "**/node_modules": true
+  },
+  "files.autoSave": "off",
+  "files.eol": "\n",
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 2,
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.fontLigatures": true,
+
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "[vue]": {
+    "editor.formatOnSave": false,
+    "gitlens.codeLens.scopes": ["document"]
+  }
+}
