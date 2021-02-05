@@ -1,6 +1,6 @@
 # Vite Project
 
-[vite 官方文档地址](vitejs.dev)
+[vite 官方文档地址](https://vitejs.dev)
 
 ## 新建项目
 
