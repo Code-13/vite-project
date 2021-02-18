@@ -7,7 +7,7 @@
  * @FilePath     : \vite.config.ts
  * @https://github.com/Code-13
  */
-import { ConfigEnv, UserConfigExport } from 'vite'
+import { ConfigEnv, defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import { viteMockServe } from 'vite-plugin-mock'
@@ -15,7 +15,8 @@ import { viteMockServe } from 'vite-plugin-mock'
 import path from 'path'
 
 // https://vitejs.dev/config/
-export default ({ command }: ConfigEnv): UserConfigExport => {
+
+export default defineConfig(({ command }: ConfigEnv) => {
   return {
     plugins: [
       vue(),
@@ -27,8 +28,10 @@ export default ({ command }: ConfigEnv): UserConfigExport => {
         localEnabled: command === 'serve'
       })
     ],
-    alias: {
-      '@': path.resolve(__dirname, 'src')
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, 'src')
+      }
     },
     css: {
       modules: {
@@ -36,4 +39,4 @@ export default ({ command }: ConfigEnv): UserConfigExport => {
       }
     }
   }
-}
+})
