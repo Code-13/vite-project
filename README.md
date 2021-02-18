@@ -59,8 +59,10 @@ import path from 'path';
 
 export default defineConfig({
   ...
-  alias: {
-    '@': path.resolve(__dirname, 'src')
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src')
+    }
   }
   ...
 });
@@ -188,9 +190,11 @@ import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 
 export default defineConfig({
-  alias: {
-    '@': path.resolve(__dirname, 'src')
-  },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src')
+    }
+  }
   plugins: [vue(), vueJsx()]
 })
 ```
@@ -208,7 +212,7 @@ yarn add -D mockjs vite-plugin-mock @types/mockjs
 改写 vite.config.ts 如下：
 
 ```ts
-import { ConfigEnv, UserConfigExport } from 'vite'
+import { ConfigEnv, defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import { viteMockServe } from 'vite-plugin-mock'
@@ -216,7 +220,7 @@ import { viteMockServe } from 'vite-plugin-mock'
 import path from 'path'
 
 // https://vitejs.dev/config/
-export default ({ command }: ConfigEnv): UserConfigExport => {
+export default defineConfig(({ command }: ConfigEnv) => {
   return {
     plugins: [
       vue(),
@@ -228,9 +232,11 @@ export default ({ command }: ConfigEnv): UserConfigExport => {
         localEnabled: command === 'serve'
       })
     ],
-    alias: {
-      '@': path.resolve(__dirname, 'src')
-    }
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, 'src')
+      }
+    },
   }
 }
 ```
