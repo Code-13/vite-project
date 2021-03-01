@@ -1,7 +1,7 @@
 /*
  * @Author       : code13
  * @Date         : 2021-02-04 14:33:01
- * @LastEditTime : 2021-02-04 15:39:56
+ * @LastEditTime : 2021-03-01 21:04:45
  * @LastEditors  : code13
  * @Description  : vite.config.ts
  * @FilePath     : \vite.config.ts
@@ -11,6 +11,9 @@ import { ConfigEnv, defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import { viteMockServe } from 'vite-plugin-mock'
+
+import myExample from './plugins/vite-plugin-my-example/index'
+import hookExample from './plugins/vite-plugins-my-hooks/index'
 
 import path from 'path'
 
@@ -26,7 +29,9 @@ export default defineConfig(({ command }: ConfigEnv) => {
         mockPath: 'mock',
         watchFiles: true, // 修改更新
         localEnabled: command === 'serve'
-      })
+      }),
+      myExample(),
+      hookExample()
     ],
     resolve: {
       alias: {

@@ -1,7 +1,7 @@
 /*
  * @Author       : code13
  * @Date         : 2021-02-04 14:33:01
- * @LastEditTime : 2021-02-04 17:39:54
+ * @LastEditTime : 2021-03-01 20:54:16
  * @LastEditors  : code13
  * @Description  : 主入口文件
  * @FilePath     : \src\main.ts
@@ -14,6 +14,10 @@ import App from './App'
 import './App.less'
 
 import router from '@/router'
+
+//@ts-ignore
+import virtual from 'virtual-module'
+console.log(virtual)
 
 import ElementPlus from 'element-plus'
 import 'element-plus/lib/theme-chalk/index.css'
