@@ -306,3 +306,7 @@ css: {
 - [ ] ElementPlus
 - [x] Ant-design-vue
 - [ ] Vant
+
+## Vite Plugin 自定义
+
+见 `/plugins/*` 目录
