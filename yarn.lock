@@ -765,10 +765,10 @@
     "@typescript-eslint/types" "4.15.2"
     eslint-visitor-keys "^2.0.0"
 
-"@vitejs/plugin-vue-jsx@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.npm.taobao.org/@vitejs/plugin-vue-jsx/download/@vitejs/plugin-vue-jsx-1.1.2.tgz#d240d8d73c2f8e34f32ade6d06e709a959d1f2a1"
-  integrity sha1-0kDY1zwvjjTzKt5tBucJqVnR8qE=
+"@vitejs/plugin-vue-jsx@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.npm.taobao.org/@vitejs/plugin-vue-jsx/download/@vitejs/plugin-vue-jsx-1.1.3.tgz#426c68f8a367a603acb82fca6e2b12506ba9fc8e"
+  integrity sha1-Qmxo+KNnpgOsuC/KbisSUGup/I4=
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/plugin-syntax-import-meta" "^7.10.4"
@@ -776,10 +776,15 @@
     "@vue/babel-plugin-jsx" "^1.0.3"
     hash-sum "^2.0.0"
 
-"@vitejs/plugin-vue@^1.1.4", "@vitejs/plugin-vue@^1.1.5":
+"@vitejs/plugin-vue@^1.1.4":
   version "1.1.5"
   resolved "https://registry.npm.taobao.org/@vitejs/plugin-vue/download/@vitejs/plugin-vue-1.1.5.tgz#fa1e8e5e049c35e213672e33f73fe81706ad5dbe"
   integrity sha1-+h6OXgScNeITZy4z9z/oFwatXb4=
+
+"@vitejs/plugin-vue@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.npm.taobao.org/@vitejs/plugin-vue/download/@vitejs/plugin-vue-1.2.1.tgz?cache=0&sync_timestamp=1617153040488&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40vitejs%2Fplugin-vue%2Fdownload%2F%40vitejs%2Fplugin-vue-1.2.1.tgz#6de49436fc346f829a56676066428e3f011522ac"
+  integrity sha1-beSUNvw0b4KaVmdgZkKOPwEVIqw=
 
 "@vue/babel-helper-vue-transform-on@^1.0.2":
   version "1.0.2"
@@ -1760,6 +1765,11 @@ esbuild@^0.8.50, esbuild@^0.8.52:
   version "0.8.54"
   resolved "https://registry.npm.taobao.org/esbuild/download/esbuild-0.8.54.tgz#2f32ff80e95c69a0f25b799d76a27c05e2857cdf"
   integrity sha1-LzL/gOlcaaDyW3mddqJ8BeKFfN8=
+
+esbuild@^0.9.3:
+  version "0.9.7"
+  resolved "https://registry.npm.taobao.org/esbuild/download/esbuild-0.9.7.tgz#ea0d639cbe4b88ec25fbed4d6ff00c8d788ef70b"
+  integrity sha1-6g1jnL5LiOwl++1Nb/AMjXiO9ws=
 
 escalade@^3.1.1:
   version "3.1.1"
@@ -3793,12 +3803,24 @@ vite-plugin-mock@^2.1.5:
     rollup "^2.39.0"
     rollup-plugin-esbuild "^2.6.1"
 
-vite@^2.0.0-beta.70, vite@^2.0.4:
+vite@^2.0.0-beta.70:
   version "2.0.4"
   resolved "https://registry.npm.taobao.org/vite/download/vite-2.0.4.tgz#063532a4139b59a067297d8ebb5960d450907a09"
   integrity sha1-BjUypBObWaBnKX2Ou1lg1FCQegk=
   dependencies:
     esbuild "^0.8.52"
+    postcss "^8.2.1"
+    resolve "^1.19.0"
+    rollup "^2.38.5"
+  optionalDependencies:
+    fsevents "~2.3.1"
+
+vite@^2.1.5:
+  version "2.1.5"
+  resolved "https://registry.npm.taobao.org/vite/download/vite-2.1.5.tgz?cache=0&sync_timestamp=1617153043581&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvite%2Fdownload%2Fvite-2.1.5.tgz#4857da441c62f7982c83cbd5f42a00330f20c9c1"
+  integrity sha1-SFfaRBxi95gsg8vV9CoAMw8gycE=
+  dependencies:
+    esbuild "^0.9.3"
     postcss "^8.2.1"
     resolve "^1.19.0"
     rollup "^2.38.5"
